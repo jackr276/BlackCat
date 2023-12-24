@@ -7,9 +7,15 @@
 using namespace std;
 
 int main(){
-    int arr[12] = {0, 0, 0, 0, 0};
+    //pointer to an array of 12 int objects
+    int (*arrptr)[12];
+    int arr[12];
 
-    LCG_RNG(12, arr);
+    //point to the address of the array
+    arrptr = &arr;
+
+    //dereference the pointer to end up with the address, what the function wants
+    LCG_RNG(12, *arrptr);
     
 
     for(int i = 0; i < 12; i++){
