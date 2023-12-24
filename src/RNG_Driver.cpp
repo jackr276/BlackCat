@@ -14,7 +14,7 @@ int main(){
     //point to the address of the array
     arrptr = &arr;
 
-    //dereference the pointer to end up with the address, what the function wants
+    //dereference the pointer to end up with what is at the address
     LCG_RNG(12, *arrptr);
     
 
