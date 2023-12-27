@@ -1,17 +1,10 @@
 /**
  * Jack Robbins
+ * This handles all of the pseudorandom number generation
 */
 
+#include "Cryptography.h"
 
-#ifndef CRYTPOGRAPHY_H
-#define CRYTPOPGRAPHY_H
-
-#include <stdlib.h> //for srand, rand
-#include <time.h> //for entropy
-#include <map>
-
-using std::map;
-using namespace std;
 
 //To be used for character conversion with our RNG's
 map<int, char> characters = {{ 0, '!' }, {1, '"'}, {2, '#'}, {3, '$'}, {4, '%'}, {5, '&'}, {6, '\''}, {7, '('}, {8, ')'}, {9, '*'},
@@ -26,12 +19,19 @@ map<int, char> characters = {{ 0, '!' }, {1, '"'}, {2, '#'}, {3, '$'}, {4, '%'},
 
 
 
-//Using Linear Congruent Generator
-extern bool LCG_RNG(int length, int(&arr)[]);
+//Using the LCG_RNG algorithm
+//taking in length, memory location of an array that will store our answer
+bool LCG_RNG(int length, char(&arr)[]){
+    //set the seed
+    srand(time(NULL));
+    for(int i = 0; i < length; i++){
+        arr[i] = characters[rand() % 82];
+    }
 
-//Using Mersenne Twister algorithm
-extern int Mersenne_Twister_RNG(int length, char& arr);
+    //TODO make the array a char array, convert numbers to ASCII
+    return true;
+}
 
 
 
-#endif /* CRYPTOGRAPHY_H */
+

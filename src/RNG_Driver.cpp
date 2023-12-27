@@ -1,6 +1,6 @@
 //Simple driver for testing
 
-#include "Crytpography.h"
+#include "Cryptography.h"
 
 #include <iostream>
 
@@ -8,8 +8,8 @@ using namespace std;
 
 int main(){
     //pointer to an array of 12 int objects
-    int (*arrptr)[12];
-    int arr[12];
+    char (*arrptr)[12];
+    char arr[12];
 
     //point to the address of the array
     arrptr = &arr;
