@@ -16,12 +16,12 @@ using namespace std;
 
 
 //Using Linear Congruent Generator
-extern bool LCG_RNG(int length, char(&arr)[]);
+extern string LCG_RNG(int length);
 
 //Using Mersenne Twister algorithm
-extern int Mersenne_Twister_RNG(int length, char& arr);
+extern int Mersenne_Twister_RNG(int length);
 
-extern string createPassword(char arr[]);
+extern string createPassword(char arr[], int &length);
 
 
 

@@ -15,13 +15,6 @@ int main(){
     arrptr = &arr;
 
     //dereference the pointer to end up with what is at the address
-    LCG_RNG(12, *arrptr); // *arrptr = arr due to dereferencing
-    
-
-    for(int i = 0; i < 12; i++){
-        cout << arr[i] << " ";
-    }
-
-    cout << endl;
-
+    cout << LCG_RNG(12) << endl; // *arrptr = arr due to dereferencing
+  
 }

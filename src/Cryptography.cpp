@@ -21,17 +21,29 @@ map<int, char> characters = {{ 0, '!' }, {1, '"'}, {2, '#'}, {3, '$'}, {4, '%'},
 
 //Using the LCG_RNG algorithm
 //taking in length, memory location of an array that will store our answer
-bool LCG_RNG(int length, char(&arr)[]){
+string LCG_RNG(int length){
+    char arr[length];
+
     //set the seed
     srand(time(NULL));
     for(int i = 0; i < length; i++){
         arr[i] = characters[rand() % 82];
     }
 
-    //TODO make the array a char array, convert numbers to ASCII
-    return true;
+    int* l = &length;
+
+    return createPassword(arr, *l);
 }
 
 
 
+//Creates the final password from the char array
+string createPassword(char arr[], int &length){
+    string password = "";
 
+    for(int i = 0; i < length; i++){
+        password += arr[i];
+    }
+
+    return password;
+}
