@@ -13,4 +13,4 @@ extern bool checkPasscodeStrength();
 
 
 
-#endif
+#endif /* PASSWORDMANAGER_H */
