@@ -15,6 +15,10 @@ int main(){
     arrptr = &arr;
 
     //dereference the pointer to end up with what is at the address
-    cout << "Using Linear Congruent Generator\n" << LCG_RNG(12) << "\n" << endl; // *arrptr = arr due to dereferencing
+    int length = 12;
+
+    string password = LCG_RNG(length);
+    double strength = checkPWStrength(password, length);
+    cout << "Using Linear Congruent Generator\n" << LCG_RNG(12) << "\n Strength: " << strength << endl; // *arrptr = arr due to dereferencing
     cout << "Using Matrix Determinant Generator\n" << MDG_RNG(12) << "\n" << endl;
 }

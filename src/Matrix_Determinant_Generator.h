@@ -1,6 +1,6 @@
 /**
  * Jack Robbins
- * Class for a custom matrix multplication pseudorandom number generator
+ * Class for a custom matrix determinant pseudorandom number generator
 */
 
 #ifndef MATRIX_DETERMINANT_RNG_H_
