@@ -15,6 +15,6 @@ int main(){
     arrptr = &arr;
 
     //dereference the pointer to end up with what is at the address
-    cout << LCG_RNG(12) << endl; // *arrptr = arr due to dereferencing
-  
+    cout << "Using Linear Congruent Generator\n" << LCG_RNG(12) << "\n" << endl; // *arrptr = arr due to dereferencing
+    cout << "Using Matrix Determinant Generator\n" << MDG_RNG(12) << "\n" << endl;
 }

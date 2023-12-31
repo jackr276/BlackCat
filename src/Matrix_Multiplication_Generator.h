@@ -9,6 +9,7 @@
 #include <time.h>
 #include <random>
 
+
 class Matrix_Determinant_RNG {
     private:
         int matrix[3][3];
@@ -16,7 +17,7 @@ class Matrix_Determinant_RNG {
     //Constructor
     public:
         Matrix_Determinant_RNG(){
-            //Record time
+            //seed the rng
             srand(time(NULL));
         }
 
@@ -30,6 +31,7 @@ class Matrix_Determinant_RNG {
 
             return matrix_determinant();
         }
+
 
     private:
         int matrix_determinant(){

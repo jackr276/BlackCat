@@ -19,7 +19,7 @@ using namespace std;
 extern string LCG_RNG(int length);
 
 //Using custom(untested) matrix determinant rng
-extern string Matrix_Determinant_RNG(int length);
+extern string MDG_RNG(int length);
 
 extern string createPassword(char (&arr)[], int &length);
 
