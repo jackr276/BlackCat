@@ -6,7 +6,7 @@
 #include "Cryptography.h"
 
 //For MDG
-#include "Matrix_Multiplication_Generator.h";
+#include "Matrix_Multiplication_Generator.h"
 
 
 //To be used for character conversion with our RNG's
@@ -47,7 +47,7 @@ string MDG_RNG(int length){
 
     for(int i = 0; i < length; i++){
         //Populate using the mdg's get next number
-        arr[i] = mdg->getNextNumber();
+        arr[i] = characters[mdg->getNextNumber()%82];
     }
 
     return createPassword(arr, length);

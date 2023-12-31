@@ -28,8 +28,7 @@ class Matrix_Determinant_RNG {
                     this->matrix[i][j] = rand();
                 }
             }
-
-            return matrix_determinant();
+            return std::abs(matrix_determinant());
         }
 
 
