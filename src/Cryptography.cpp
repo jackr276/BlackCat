@@ -36,9 +36,17 @@ string LCG_RNG(int length){
 }
 
 
+string Matrix_Determinant_RNG(int length){
+    char arr[length];
+
+
+
+    return createPassword(arr, length);
+}
+
 
 //Creates the final password from the char array
-string createPassword(char arr[], int &length){
+string createPassword(char (&arr)[], int &length){
     string password = "";
 
     for(int i = 0; i < length; i++){

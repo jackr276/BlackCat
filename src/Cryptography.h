@@ -18,10 +18,10 @@ using namespace std;
 //Using Linear Congruent Generator
 extern string LCG_RNG(int length);
 
-//Using Mersenne Twister algorithm
-extern int Mersenne_Twister_RNG(int length);
+//Using custom(untested) matrix determinant rng
+extern string Matrix_Determinant_RNG(int length);
 
-extern string createPassword(char arr[], int &length);
+extern string createPassword(char (&arr)[], int &length);
 
 
 
