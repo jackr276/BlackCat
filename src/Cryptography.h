@@ -11,6 +11,9 @@
 #include <map>
 #include <string>
 
+//For MDG
+#include "Matrix_Multiplication_Generator.h"
+
 using std::map;
 using namespace std;
 

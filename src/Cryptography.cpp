@@ -5,9 +5,6 @@
 
 #include "Cryptography.h"
 
-//For MDG
-#include "Matrix_Multiplication_Generator.h"
-
 
 //To be used for character conversion with our RNG's
 map<int, char> characters = {{ 0, '!' }, {1, '"'}, {2, '#'}, {3, '$'}, {4, '%'}, {5, '&'}, {6, '\''}, {7, '('}, {8, ')'}, {9, '*'},

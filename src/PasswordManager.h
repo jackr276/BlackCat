@@ -7,8 +7,12 @@
 #define PASSWORDMANAGER_H
 
 #include <iostream>
+#include "Cryptography.h"
 
-extern bool generatePassword(int length, int numSpecial);
+//0 for LCG, 1 for MDG
+extern string generatePassword(int length, int option);
+
+
 extern bool checkPasscodeStrength();
 
 
