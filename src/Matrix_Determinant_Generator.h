@@ -21,6 +21,9 @@ class Matrix_Determinant_RNG {
             srand(time(NULL));
         }
 
+        //just here to have
+        ~Matrix_Determinant_RNG(){};
+
         int getNextNumber(){
             //rewrite the class's matrix every time
             for(int i = 0; i < 3; i++){

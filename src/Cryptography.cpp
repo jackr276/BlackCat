@@ -47,6 +47,9 @@ string MDG_RNG(int length){
         arr[i] = characters[mdg->getNextNumber()%82];
     }
 
+    //not necessary
+    delete mdg;
+
     return createPassword(arr, length);
 }
 
