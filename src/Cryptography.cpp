@@ -87,5 +87,5 @@ double checkPWStrength(string &password, int &length){
     //Check strength using formula, eights given to certain characters
     // Strong -> at least 20% special characters, 15% numbers, 65% upper/lower mix
  
-    return numSpecial/length * 0.95 + numCap/length * 0.50 + numNum/length * 0.20 + numLower/length * 0.20;
+    return numSpecial/length * 0.95 + numCap/length * 0.30 + numNum/length * 0.20 + numLower/length * 0.20;
 }
