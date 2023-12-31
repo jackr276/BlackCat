@@ -13,7 +13,7 @@
 extern string generatePassword(int length, int option);
 
 
-extern bool checkPasscodeStrength();
+extern void checkPasscodeStrength();
 
 
 

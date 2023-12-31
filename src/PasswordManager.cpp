@@ -14,4 +14,8 @@ string generatePassword(int length, int option){
     }
 }
 
+void checkPasscodeStrength(){
+    
+}
+
 
