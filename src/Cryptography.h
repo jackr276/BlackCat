@@ -31,5 +31,8 @@ extern string createPassword(char (&arr)[], int &length);
 //Checks passcode strength, giving a number //TODO
 extern double checkPWStrength(string &password, int &length);
 
+//using shannon entropy
+// H = -1*sum(p_i*log(p_i))
+extern double calculateEntropy(string &password, int &length);
 
 #endif /* CRYPTOGRAPHY_H */

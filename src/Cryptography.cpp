@@ -94,3 +94,29 @@ double checkPWStrength(string &password, int &length){
 
     return numSpecial/length * 0.95 + numCap/length * 0.30 + numNum/length * 0.20 + numLower/length * 0.20;
 }
+
+
+/**
+ * Using the formula for shannon entropy: H = -1*sum(p_i*log(p_i))
+*/
+double calculateEntropy(string &password, int &length){
+    double entropy = 0.0;
+    map<char, int> freqMap;
+    
+    //populate the frequency map
+    for (char &character : password) {
+        //if it is not already in, add it in
+        if(freqMap.find(character) == freqMap.end()){
+            freqMap.insert(pair<char, int> (character, 1));
+        } else {
+            freqMap[character]++;
+        }
+    }
+
+    for(const auto &pair : freqMap){
+        
+    }
+
+
+
+}

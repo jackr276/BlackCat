@@ -47,9 +47,6 @@ class Matrix_Determinant_RNG {
             
             return subdet1 + subdet2 + subdet3;
         }
-
-
-
 };
 
 
