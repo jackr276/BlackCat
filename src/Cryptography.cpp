@@ -68,7 +68,8 @@ string createPassword(char (&arr)[], int &length){
 
 //Check the passwords strength, giving an integer rating
 double checkPWStrength(string &password, int &length){
-    int numSpecial, numCap, numNum, numLower = 0;
+    //doubles(we will have decimal answers), all initialized to 0(0.0)
+    double numSpecial = 0, numCap = 0, numNum = 0, numLower = 0;
 
     for(char &character : password){
         if (isalpha(character)){
@@ -90,6 +91,6 @@ double checkPWStrength(string &password, int &length){
 
     //Check strength using formula, eights given to certain characters
     // Strong -> at least 20% special characters, 15% numbers, 65% upper/lower mix
- 
+
     return numSpecial/length * 0.95 + numCap/length * 0.30 + numNum/length * 0.20 + numLower/length * 0.20;
 }

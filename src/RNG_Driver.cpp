@@ -6,50 +6,34 @@
 
 using namespace std;
 
+//predeclare
 void test_algos();
 
-int main(int argc, char *argv[]){
+
+int main(int argc, char (*argv[])){
+    //now testing using user input
 
     if(argc < 3) {
         return -1;
     }
 
-    double strength;
+    int len = stoi(argv[1]);
+    int option = stoi(argv[2]);
 
-    string len = argv[1];
-    string option = argv[2];
+    string passcode = generatePassword(len, option);
 
-    int length = stoi(len);
-
-    string passcode = generatePassword(stoi(len), stoi(option));
-    strength = checkPWStrength(passcode, length);
-
-    cout << passcode << endl;
-    cout << "Strength: " << strength << endl;
+    cout << "Password is: " << passcode << endl;
+    checkPasscodeStrength(passcode, len);
  
- 
-    //pointer to an array of 12 int objects
-    char (*arrptr)[12];
-    char arr[12];
-
-    //point to the address of the array
-    arrptr = &arr;
-
-    //dereference the pointer to end up with what is at the address
-
-
-    
-
-
-
-
-
     //not using atm
-    test_algos();
+    //test_algos();
     
 }
 
 
+/**
+ * For overall testing, not currently in use but handy when needed
+*/
 void test_algos(){
     //testing both methods against eachother quantitatively
     double LCG_Strength_Sum, MDG_Strength_Sum = 0.0;

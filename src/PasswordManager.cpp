@@ -16,9 +16,7 @@ string generatePassword(int length, int option){
 
 void checkPasscodeStrength(string &passcode, int &length){
 
-    double strength = checkPWStrength(passcode, length);
-
-    cout << "Password Strength(//TODO): " << strength << endl;
+    cout << "Password Strength(//TODO): " << checkPWStrength(passcode, length) << endl;
 }
 
 
