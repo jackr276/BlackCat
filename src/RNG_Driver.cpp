@@ -6,6 +6,8 @@
 
 using namespace std;
 
+void test_algos();
+
 int main(){
     //pointer to an array of 12 int objects
     char (*arrptr)[12];
@@ -15,9 +17,12 @@ int main(){
     arrptr = &arr;
 
     //dereference the pointer to end up with what is at the address
-    int length = 12;
 
+    test_algos();
+    
+}
 
+void test_algos(){
     //testing both methods against eachother quantitatively
     double LCG_Strength_Sum, MDG_Strength_Sum = 0.0;
     for(int i = 0; i < 10000000; i++){
@@ -49,6 +54,4 @@ int main(){
     cout << "Average LCG Strength: " << LCG_Strength_Sum/10000000 << endl;
     cout << "Average MDG Strength: " << MDG_Strength_Sum/10000000 << endl;
 
-
-    
 }

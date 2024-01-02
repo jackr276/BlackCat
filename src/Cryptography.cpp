@@ -65,6 +65,7 @@ string createPassword(char (&arr)[], int &length){
     return password;
 }
 
+
 //Check the passwords strength, giving an integer rating
 double checkPWStrength(string &password, int &length){
     int numSpecial, numCap, numNum, numLower = 0;
