@@ -114,9 +114,10 @@ double calculateEntropy(string &password, int &length){
     }
 
     for(const auto &pair : freqMap){
-        
+        double probability_of_i = pair.second / length;
+        //p_i * log(p_i)
+        entropy += (probability_of_i * log2(probability_of_i));
     }
 
-
-
+    return -entropy;
 }
