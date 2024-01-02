@@ -121,7 +121,7 @@ double calculateEntropy(string &password, int &length){
         entropy += (probability_of_i * log2(probability_of_i));
     }
 
-    cout << "On average, " << -entropy << " bits would be needed to encode a single character in this passcode" << endl;
+    cout << "On average, " << -entropy << " bits would be needed to encode a single character in this passcode, leaving a total entropy of: ";
 
     return -entropy * length;
 }
