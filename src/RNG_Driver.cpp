@@ -24,6 +24,8 @@ int main(int argc, char (*argv[])){
 
     cout << "Password is: " << passcode << endl;
     checkPasscodeStrength(passcode, len);
+    cout << endl;
+    checkEntropy(passcode, len);
  
     //not using atm
     //test_algos();

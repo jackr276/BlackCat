@@ -98,16 +98,18 @@ double checkPWStrength(string &password, int &length){
 
 /**
  * Using the formula for shannon entropy: H = -1*sum(p_i*log(p_i))
+ * This gives us the average number of bits needed to encode a singular character
+ * doing H * length gives us the the entropy for the given passcode
 */
 double calculateEntropy(string &password, int &length){
     double entropy = 0.0;
-    map<char, int> freqMap;
+    map<char, double> freqMap;
     
     //populate the frequency map
     for (char &character : password) {
         //if it is not already in, add it in
         if(freqMap.find(character) == freqMap.end()){
-            freqMap.insert(pair<char, int> (character, 1));
+            freqMap.insert(pair<char, double> (character, 1));
         } else {
             freqMap[character]++;
         }
@@ -119,5 +121,7 @@ double calculateEntropy(string &password, int &length){
         entropy += (probability_of_i * log2(probability_of_i));
     }
 
-    return -entropy;
+    cout << "On average, " << -entropy << " bits would be needed to encode a single character in this passcode" << endl;
+
+    return -entropy * length;
 }

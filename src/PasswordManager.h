@@ -15,6 +15,6 @@ extern string generatePassword(int length, int option);
 
 extern void checkPasscodeStrength(string &passcode, int &length);
 
-
+extern void checkEntropy(string &passcode, int &length);
 
 #endif /* PASSWORDMANAGER_H */
