@@ -10,6 +10,7 @@
 #include <time.h> //for entropy
 #include <map>
 #include <string>
+#include <iostream>
 
 //For MDG
 #include "Matrix_Determinant_Generator.h"
