@@ -14,16 +14,20 @@ int main(int argc, char *argv[]){
         return -1;
     }
 
+    double strength;
+
     string len = argv[1];
     string option = argv[2];
 
     int length = stoi(len);
 
-    //string passcode = generatePassword(stoi(len), stoi(option));
+    string passcode = generatePassword(stoi(len), stoi(option));
+    strength = checkPWStrength(passcode, length);
 
-    //cout << passcode << endl;
-    //checkPasscodeStrength(passcode, length);
-
+    cout << passcode << endl;
+    cout << "Strength: " << strength << endl;
+ 
+ 
     //pointer to an array of 12 int objects
     char (*arrptr)[12];
     char arr[12];
