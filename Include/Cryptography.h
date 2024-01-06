@@ -14,6 +14,8 @@
 
 //For MDG
 #include "Matrix_Determinant_Generator.h"
+#include "Encrypt.h"
+#include "Decrypt.h"
 
 using std::map;
 using namespace std;
@@ -34,5 +36,11 @@ extern double checkPWStrength(string &password, int &length);
 //using shannon entropy
 // H = -1*sum(p_i*log(p_i))
 extern double calculateEntropy(string &password, int &length);
+
+
+/* Begin thinking about password storage via encrpytion and decryption, using AES first */
+
+
+
 
 #endif /* CRYPTOGRAPHY_H */
