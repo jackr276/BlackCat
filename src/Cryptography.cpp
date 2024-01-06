@@ -3,7 +3,7 @@
  * This handles all of the pseudorandom number generation
 */
 
-#include "Cryptography.h"
+#include "../Include/Cryptography.h"
 
 
 //To be used for character conversion with our RNG's

@@ -3,7 +3,7 @@
  * Password generator/strength checker -- still building
 */
 
-#include "PasswordManager.h"
+#include "../Include/PasswordManager.h"
 
 
 string generatePassword(int length, int option){
