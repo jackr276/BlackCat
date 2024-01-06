@@ -10,7 +10,7 @@ using namespace std;
 void test_algos();
 
 
-int main(int argc, char (*argv[])){
+int main(int argc, char *argv[]){
     //now testing using user input
 
     if(argc < 3) {
