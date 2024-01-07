@@ -1,10 +1,9 @@
 /**
  * Jack Robbins
- * This handles all of the pseudorandom number generation
+ * This handles all of the pseudorandom number generation, password checking, entropy calculations, etc
 */
 
 #include "../Include/Cryptography.h"
-
 
 
 //Using the LCG_RNG algorithm

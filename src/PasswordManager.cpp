@@ -23,3 +23,4 @@ void checkPasscodeStrength(string &passcode, int &length){
 void checkEntropy(string &passcode, int &length){
     cout << "Shannon Entropy: " << calculateEntropy(passcode, length) << endl;
 }
+

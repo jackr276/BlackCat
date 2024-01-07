@@ -29,6 +29,13 @@ int main(int argc, char *argv[]){
  
     //not using atm
     //test_algos();
+
+    //testing caesar cypher
+    int key = 2;
+    char arr[] = {'a', 'b', '&', '_'};
+    caesar_cyper_encrypt(key, arr, 4);
+
+    cout << arr << endl;
     
 }
 
