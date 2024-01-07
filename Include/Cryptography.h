@@ -17,7 +17,6 @@
 #include "Encrypt.h"
 #include "Decrypt.h"
 
-using std::map;
 using namespace std;
 
 
