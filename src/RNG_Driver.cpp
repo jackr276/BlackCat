@@ -35,15 +35,23 @@ int main(int argc, char *argv[]){
     cout << "\nEnter your key(Make sure to remember it!): ";
     cin >> key;
 
-    char arr[] = {'a', 'b', '&', '7'};
-    caesar_cyper_encrypt(key, arr, 4);
+    char arr[passcode.length()];
+
+    //ensure array is null terminated, as it is being used for string conversion, and needs termination thusly
+    arr[passcode.length()] = '\0';
+
+    for(int i = 0; i < passcode.length(); i++){
+        arr[i] = passcode[i];
+    }
+
+    caesar_cyper_encrypt(key, arr, passcode.length());
 
     cout << "\nEncrypted password: " << arr << endl;
 
     cout << "Now attempting decryption, enter your key: ";
     cin >> key;
 
-    caesar_cyper_decrypt(key, arr, 4);
+    caesar_cyper_decrypt(key, arr, passcode.length());
 
     cout << "\nDecrypted password: " << arr << endl; 
 }
