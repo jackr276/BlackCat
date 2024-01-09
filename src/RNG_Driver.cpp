@@ -31,16 +31,21 @@ int main(int argc, char *argv[]){
     //test_algos();
 
     //testing caesar cypher
-    int key = 28;
+    int key;
+    cout << "\nEnter your key(Make sure to remember it!): ";
+    cin >> key;
+
     char arr[] = {'a', 'b', '&', '7'};
     caesar_cyper_encrypt(key, arr, 4);
 
-    cout << "Encrypted password: " << arr << endl;
+    cout << "\nEncrypted password: " << arr << endl;
+
+    cout << "Now attempting decryption, enter your key: ";
+    cin >> key;
 
     caesar_cyper_decrypt(key, arr, 4);
 
-    cout << "Decrypted password: " << arr << endl;
-    
+    cout << "\nDecrypted password: " << arr << endl; 
 }
 
 
