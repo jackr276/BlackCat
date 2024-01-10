@@ -22,6 +22,8 @@ private slots:
 
     void on_horizontalSlider_valueChanged(int value);
 
+    void on_password_generation_settings_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

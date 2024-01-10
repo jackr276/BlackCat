@@ -15,6 +15,9 @@ public:
     explicit PassGen_Settings(QWidget *parent = nullptr);
     ~PassGen_Settings();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::PassGen_Settings *ui;
 };

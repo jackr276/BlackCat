@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 #include "./PasswordManager.h"
+#include "./passgen_settings.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -37,5 +38,15 @@ void MainWindow::on_horizontalSlider_valueChanged(int value)
 {
     ui -> user_inputted_length->setText(QString::number(value));
     passwordLen = value;
+}
+
+
+void MainWindow::on_password_generation_settings_clicked()
+{
+    //Generate the new window
+    PassGen_Settings *p = new PassGen_Settings();
+    p->showNormal();
+
+
 }
 

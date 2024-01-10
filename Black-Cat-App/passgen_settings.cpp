@@ -12,3 +12,9 @@ PassGen_Settings::~PassGen_Settings()
 {
     delete ui;
 }
+
+void PassGen_Settings::on_pushButton_clicked()
+{
+
+}
+
