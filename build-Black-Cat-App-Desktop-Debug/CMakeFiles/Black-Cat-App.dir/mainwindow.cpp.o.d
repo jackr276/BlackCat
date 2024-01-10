@@ -377,10 +377,29 @@ CMakeFiles/Black-Cat-App.dir/mainwindow.cpp.o: \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtGui/qinputmethod.h \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtCore/qlocale.h \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtGui/qguiapplication_platform.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/QLabel \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qlabel.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qframe.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtGui/qpicture.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtCore/qiodevice.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtGui/qtextdocument.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtCore/qurl.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/QLineEdit \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qlineedit.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtGui/qtextcursor.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtGui/qtextformat.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtGui/qpen.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtGui/qtextoption.h \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/QMainWindow \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/QMenuBar \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qmenubar.h \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qmenu.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/QPushButton \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qpushbutton.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractbutton.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/QSlider \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qslider.h \
+ /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qabstractslider.h \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/QStatusBar \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/qstatusbar.h \
  /home/jackr/Qt/6.6.1/gcc_64/include/QtWidgets/QWidget \
