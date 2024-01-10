@@ -3,7 +3,7 @@
  * Password generator/strength checker -- still building
 */
 
-#include "../Include/PasswordManager.h"
+#include "./PasswordManager.h"
 
 
 string generatePassword(int length, int option){
@@ -20,7 +20,7 @@ void checkPasscodeStrength(string &passcode, int &length){
 }
 
 
-void checkEntropy(string &passcode, int &length){
-    cout << "Shannon Entropy: " << calculateEntropy(passcode, length) << endl;
+double checkEntropy(string &passcode, int &length){
+    return calculateEntropy(passcode, length);
 }
 
