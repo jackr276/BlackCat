@@ -2,7 +2,7 @@
  * File for all encryptions
 */
 
-#include "../Include/Encrypt.h"
+#include "./Encrypt.h"
 
 void caesar_cyper_encrypt(int &keyVal, char (&arr)[], int size){
         for(int i = 0; i < size; i++){

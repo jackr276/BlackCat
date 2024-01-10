@@ -2,7 +2,7 @@
  * Holds all of the decryption algorithms
 */
 
-#include "../Include/Decrypt.h"
+#include "./Decrypt.h"
 
 
 void caesar_cyper_decrypt(int &keyVal, char (&arr)[], int size){

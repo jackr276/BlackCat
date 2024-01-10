@@ -14,15 +14,16 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+int passwordLen = 0;
 
 /**
  * @brief MainWindow::on_GeneratePasswordButton_clicked generates password accordingly
  */
 void MainWindow::on_GeneratePasswordButton_clicked()
 {
-    std::string passcode = generatePassword(12, 1);
-    int length = 12; // will change soon
-    double entropy = checkEntropy(passcode, length);
+    std::string passcode = generatePassword(passwordLen, 1);
+
+    double entropy = checkEntropy(passcode, passwordLen);
     QString passw = QString::fromStdString(passcode);
     ui->passwordBox->setText(passw);
 
@@ -34,6 +35,7 @@ void MainWindow::on_GeneratePasswordButton_clicked()
 
 void MainWindow::on_horizontalSlider_valueChanged(int value)
 {
-
+    ui -> user_inputted_length->setText(QString::number(value));
+    passwordLen = value;
 }
 

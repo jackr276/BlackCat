@@ -4,6 +4,7 @@
 */
 
 #include "./PasswordManager.h"
+#include "./Cryptography.h"
 
 
 string generatePassword(int length, int option){

@@ -3,7 +3,7 @@
  * This handles all of the pseudorandom number generation, password checking, entropy calculations, etc
 */
 
-#include "../Include/Cryptography.h"
+#include "./Cryptography.h"
 
 
 //Using the LCG_RNG algorithm
