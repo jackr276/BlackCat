@@ -17,6 +17,7 @@ int main(int argc, char *argv[]){
         return -1;
     }
 
+
     int len = stoi(argv[1]);
     int option = stoi(argv[2]);
 
