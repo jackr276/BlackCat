@@ -1,8 +1,0 @@
-/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug/CMakeFiles/Black-Cat-App.dir
-/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug/CMakeFiles/edit_cache.dir
-/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug/CMakeFiles/list_install_components.dir
-/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug/CMakeFiles/install.dir
-/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug/CMakeFiles/install/local.dir
-/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug/CMakeFiles/install/strip.dir
-/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug/CMakeFiles/Black-Cat-App_autogen.dir

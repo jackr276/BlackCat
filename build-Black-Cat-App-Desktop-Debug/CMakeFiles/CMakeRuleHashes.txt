@@ -1,2 +1,0 @@
-# Hashes of file build rules.
-73fa1aabe225f21fef48eef9a3e8852f CMakeFiles/Black-Cat-App_autogen
