@@ -1,0 +1,70 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d2242ac6a8b48a56f79f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Black-Cat-App",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Black-Cat-App::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Black-Cat-App-Debug-c73ab86df64f8396da03.json",
+					"name" : "Black-Cat-App",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Black-Cat-App_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Black-Cat-App_autogen-Debug-8ed79c4f397992df2a3c.json",
+					"name" : "Black-Cat-App_autogen",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jackr/Programming/GitHub/PasswordManager/build-Black-Cat-App-Desktop-Debug",
+		"source" : "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
