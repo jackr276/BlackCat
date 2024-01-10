@@ -12,3 +12,15 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_GeneratePasswordButton_clicked()
+{
+
+}
+
+
+void MainWindow::on_horizontalSlider_valueChanged(int value)
+{
+
+}
+

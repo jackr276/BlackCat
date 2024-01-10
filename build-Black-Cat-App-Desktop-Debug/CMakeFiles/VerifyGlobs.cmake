@@ -41,6 +41,10 @@ endif()
 # _directory_contents at /home/jackr/Qt/6.6.1/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/*.cpp")
 set(OLD_GLOB
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/Cryptography.cpp"
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/Decrypt.cpp"
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/Encrypt.cpp"
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/PasswordManager.cpp"
   "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/main.cpp"
   "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/mainwindow.cpp"
   )
@@ -61,6 +65,11 @@ endif()
 # _directory_contents at /home/jackr/Qt/6.6.1/gcc_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/*.h")
 set(OLD_GLOB
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/Cryptography.h"
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/Decrypt.h"
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/Encrypt.h"
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/Matrix_Determinant_Generator.h"
+  "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/PasswordManager.h"
   "/home/jackr/Programming/GitHub/PasswordManager/Black-Cat-App/mainwindow.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

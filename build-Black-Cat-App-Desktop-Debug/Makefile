@@ -212,6 +212,102 @@ Black-Cat-App_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Black-Cat-App_autogen/mocs_compilation.cpp.s
 .PHONY : Black-Cat-App_autogen/mocs_compilation.cpp.s
 
+Cryptography.o: Cryptography.cpp.o
+.PHONY : Cryptography.o
+
+# target to build an object file
+Cryptography.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Cryptography.cpp.o
+.PHONY : Cryptography.cpp.o
+
+Cryptography.i: Cryptography.cpp.i
+.PHONY : Cryptography.i
+
+# target to preprocess a source file
+Cryptography.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Cryptography.cpp.i
+.PHONY : Cryptography.cpp.i
+
+Cryptography.s: Cryptography.cpp.s
+.PHONY : Cryptography.s
+
+# target to generate assembly for a file
+Cryptography.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Cryptography.cpp.s
+.PHONY : Cryptography.cpp.s
+
+Decrypt.o: Decrypt.cpp.o
+.PHONY : Decrypt.o
+
+# target to build an object file
+Decrypt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Decrypt.cpp.o
+.PHONY : Decrypt.cpp.o
+
+Decrypt.i: Decrypt.cpp.i
+.PHONY : Decrypt.i
+
+# target to preprocess a source file
+Decrypt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Decrypt.cpp.i
+.PHONY : Decrypt.cpp.i
+
+Decrypt.s: Decrypt.cpp.s
+.PHONY : Decrypt.s
+
+# target to generate assembly for a file
+Decrypt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Decrypt.cpp.s
+.PHONY : Decrypt.cpp.s
+
+Encrypt.o: Encrypt.cpp.o
+.PHONY : Encrypt.o
+
+# target to build an object file
+Encrypt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Encrypt.cpp.o
+.PHONY : Encrypt.cpp.o
+
+Encrypt.i: Encrypt.cpp.i
+.PHONY : Encrypt.i
+
+# target to preprocess a source file
+Encrypt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Encrypt.cpp.i
+.PHONY : Encrypt.cpp.i
+
+Encrypt.s: Encrypt.cpp.s
+.PHONY : Encrypt.s
+
+# target to generate assembly for a file
+Encrypt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/Encrypt.cpp.s
+.PHONY : Encrypt.cpp.s
+
+PasswordManager.o: PasswordManager.cpp.o
+.PHONY : PasswordManager.o
+
+# target to build an object file
+PasswordManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/PasswordManager.cpp.o
+.PHONY : PasswordManager.cpp.o
+
+PasswordManager.i: PasswordManager.cpp.i
+.PHONY : PasswordManager.i
+
+# target to preprocess a source file
+PasswordManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/PasswordManager.cpp.i
+.PHONY : PasswordManager.cpp.i
+
+PasswordManager.s: PasswordManager.cpp.s
+.PHONY : PasswordManager.s
+
+# target to generate assembly for a file
+PasswordManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Black-Cat-App.dir/build.make CMakeFiles/Black-Cat-App.dir/PasswordManager.cpp.s
+.PHONY : PasswordManager.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -277,6 +373,18 @@ help:
 	@echo "... Black-Cat-App_autogen/mocs_compilation.o"
 	@echo "... Black-Cat-App_autogen/mocs_compilation.i"
 	@echo "... Black-Cat-App_autogen/mocs_compilation.s"
+	@echo "... Cryptography.o"
+	@echo "... Cryptography.i"
+	@echo "... Cryptography.s"
+	@echo "... Decrypt.o"
+	@echo "... Decrypt.i"
+	@echo "... Decrypt.s"
+	@echo "... Encrypt.o"
+	@echo "... Encrypt.i"
+	@echo "... Encrypt.s"
+	@echo "... PasswordManager.o"
+	@echo "... PasswordManager.i"
+	@echo "... PasswordManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

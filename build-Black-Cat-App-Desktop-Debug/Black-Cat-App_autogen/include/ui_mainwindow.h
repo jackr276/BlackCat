@@ -64,7 +64,7 @@ public:
         label_2->setFont(font1);
         horizontalSlider = new QSlider(centralwidget);
         horizontalSlider->setObjectName("horizontalSlider");
-        horizontalSlider->setGeometry(QRect(650, 280, 531, 16));
+        horizontalSlider->setGeometry(QRect(640, 270, 531, 16));
         horizontalSlider->setOrientation(Qt::Horizontal);
         horizontalSlider->setTickPosition(QSlider::TicksBelow);
         horizontalSlider->setTickInterval(2);
