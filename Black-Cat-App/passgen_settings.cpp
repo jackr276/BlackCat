@@ -8,12 +8,28 @@ PassGen_Settings::PassGen_Settings(QWidget *parent)
     ui->setupUi(this);
 }
 
+
 PassGen_Settings::~PassGen_Settings()
 {
     delete ui;
 }
 
-void PassGen_Settings::on_pushButton_clicked()
+
+
+void PassGen_Settings::on_Accept_button_clicked()
+{
+    this->close();
+}
+
+
+
+void PassGen_Settings::on_LCG_Select_toggled(bool checked)
+{
+
+}
+
+
+void PassGen_Settings::on_MDG_Select_toggled(bool checked)
 {
 
 }

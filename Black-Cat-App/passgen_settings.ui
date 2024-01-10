@@ -13,23 +13,77 @@
   <property name="palette">
    <palette>
     <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>162</green>
+        <blue>105</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>162</green>
+        <blue>105</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>162</green>
+        <blue>105</blue>
+       </color>
+      </brush>
+     </colorrole>
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>192</red>
-        <green>191</green>
-        <blue>188</blue>
+        <red>94</red>
+        <green>92</green>
+        <blue>100</blue>
        </color>
       </brush>
      </colorrole>
     </active>
     <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>162</green>
+        <blue>105</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>162</green>
+        <blue>105</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>38</red>
+        <green>162</green>
+        <blue>105</blue>
+       </color>
+      </brush>
+     </colorrole>
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>192</red>
-        <green>191</green>
-        <blue>188</blue>
+        <red>94</red>
+        <green>92</green>
+        <blue>100</blue>
        </color>
       </brush>
      </colorrole>
@@ -38,18 +92,18 @@
      <colorrole role="Base">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>192</red>
-        <green>191</green>
-        <blue>188</blue>
+        <red>94</red>
+        <green>92</green>
+        <blue>100</blue>
        </color>
       </brush>
      </colorrole>
      <colorrole role="Window">
       <brush brushstyle="SolidPattern">
        <color alpha="255">
-        <red>192</red>
-        <green>191</green>
-        <blue>188</blue>
+        <red>94</red>
+        <green>92</green>
+        <blue>100</blue>
        </color>
       </brush>
      </colorrole>
@@ -59,20 +113,65 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QRadioButton" name="radioButton">
+  <widget class="QRadioButton" name="LCG_Select">
    <property name="geometry">
     <rect>
-     <x>150</x>
+     <x>0</x>
      <y>80</y>
-     <width>99</width>
+     <width>221</width>
      <height>22</height>
     </rect>
    </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>53</red>
+         <green>132</green>
+         <blue>228</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>53</red>
+         <green>132</green>
+         <blue>228</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>53</red>
+         <green>132</green>
+         <blue>228</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>RadioButton</string>
+    <string>Linear Congruent Generator(LCG)</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="Accept_button">
    <property name="geometry">
     <rect>
      <x>320</x>
@@ -122,17 +221,54 @@
     <string>Accept</string>
    </property>
   </widget>
-  <widget class="QRadioButton" name="radioButton_2">
+  <widget class="QRadioButton" name="MDG_Select">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>110</y>
-     <width>99</width>
+     <x>0</x>
+     <y>100</y>
+     <width>321</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>RadioButton</string>
+    <string>Matrix Determinant Generator(MDG)(Experimental)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Window_Title">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>10</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Modify Generation Settings</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>291</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Random Number Generation Scheme</string>
    </property>
   </widget>
  </widget>

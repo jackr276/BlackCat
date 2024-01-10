@@ -16,6 +16,7 @@ MainWindow::~MainWindow()
 }
 
 int passwordLen = 0;
+int option = 1;
 
 /**
  * @brief MainWindow::on_GeneratePasswordButton_clicked generates password accordingly
@@ -46,7 +47,6 @@ void MainWindow::on_password_generation_settings_clicked()
     //Generate the new window
     PassGen_Settings *p = new PassGen_Settings();
     p->showNormal();
-
 
 }
 
