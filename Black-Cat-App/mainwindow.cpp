@@ -15,15 +15,18 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-int passwordLen = 0;
-int option = 1;
-
 /**
  * @brief MainWindow::on_GeneratePasswordButton_clicked generates password accordingly
  */
 void MainWindow::on_GeneratePasswordButton_clicked()
 {
-    std::string passcode = generatePassword(passwordLen, 1);
+    if(this->option == 0){
+        ui->algorithm_display->setText("Matrix Determinant Generator(MDG)");
+    } else {
+        ui ->algorithm_display->setText("Linear Congruent Generator(LCG)");
+    }
+
+    std::string passcode = generatePassword(passwordLen, option);
 
     double entropy = checkEntropy(passcode, passwordLen);
     QString passw = QString::fromStdString(passcode);
@@ -46,8 +49,12 @@ void MainWindow::on_password_generation_settings_clicked()
 {
     //Generate the new window
     PassGen_Settings *p = new PassGen_Settings();
+    //connect the optionchanging
+    QObject::connect(p, &PassGen_Settings::optionChanged, this, &MainWindow::setOption);
     p->setWindowTitle("Generator Settings");
     p->showNormal();
-
 }
 
+void MainWindow::setOption(int newOption){
+    this->option = newOption;
+}

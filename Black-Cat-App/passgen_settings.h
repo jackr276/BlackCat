@@ -10,10 +10,12 @@ class PassGen_Settings;
 class PassGen_Settings : public QDialog
 {
     Q_OBJECT
-
 public:
     explicit PassGen_Settings(QWidget *parent=nullptr);
     ~PassGen_Settings();
+
+signals:
+    void optionChanged(int option);
 
 private slots:
 
@@ -23,7 +25,8 @@ private slots:
 
     void on_MDG_Select_toggled(bool checked);
 
-    void on_Accept_button_2_clicked();
+
+    void on_Cancel_Button_clicked();
 
 private:
     Ui::PassGen_Settings *ui;

@@ -271,7 +271,7 @@
     <string>Random Number Generation Scheme</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Accept_button_2">
+  <widget class="QPushButton" name="Cancel_Button">
    <property name="geometry">
     <rect>
      <x>250</x>

@@ -379,8 +379,8 @@
    <widget class="QLabel" name="Entropy_label">
     <property name="geometry">
      <rect>
-      <x>640</x>
-      <y>330</y>
+      <x>200</x>
+      <y>370</y>
       <width>131</width>
       <height>31</height>
      </rect>
@@ -397,15 +397,15 @@
    <widget class="QLineEdit" name="Entropy_Display">
     <property name="geometry">
      <rect>
-      <x>780</x>
-      <y>330</y>
+      <x>340</x>
+      <y>370</y>
       <width>81</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>13</pointsize>
+      <pointsize>14</pointsize>
      </font>
     </property>
    </widget>
@@ -427,14 +427,42 @@
    <widget class="QPushButton" name="password_generation_settings">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>320</y>
+      <x>200</x>
+      <y>440</y>
       <width>131</width>
       <height>24</height>
      </rect>
     </property>
     <property name="text">
      <string>Generator Settings</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="algorithm_display">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>320</y>
+      <width>271</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="algorithm_label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>320</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Generation Algorithm in Use:</string>
     </property>
    </widget>
   </widget>

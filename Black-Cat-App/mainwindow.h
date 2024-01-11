@@ -13,6 +13,10 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+private:
+    int passwordLen = 0;
+    int option = 1;
+
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
@@ -26,5 +30,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+    void setOption(int newOption);
 };
 #endif // MAINWINDOW_H
