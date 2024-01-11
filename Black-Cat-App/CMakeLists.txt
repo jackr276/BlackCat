@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         Cryptography.h Decrypt.h Encrypt.h Matrix_Determinant_Generator.h PasswordManager.h
         Cryptography.cpp Decrypt.cpp Encrypt.cpp PasswordManager.cpp
         passgen_settings.h passgen_settings.cpp passgen_settings.ui
+        shannon_entropy_info.h shannon_entropy_info.cpp shannon_entropy_info.ui
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Black-Cat-App APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

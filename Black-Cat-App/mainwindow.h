@@ -28,6 +28,8 @@ private slots:
 
     void on_password_generation_settings_clicked();
 
+    void on_entropy_info_button_clicked();
+
 private:
     Ui::MainWindow *ui;
 

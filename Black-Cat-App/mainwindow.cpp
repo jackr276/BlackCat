@@ -2,6 +2,7 @@
 #include "./ui_mainwindow.h"
 #include "./PasswordManager.h"
 #include "./passgen_settings.h"
+#include "./shannon_entropy_info.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -58,3 +59,12 @@ void MainWindow::on_password_generation_settings_clicked()
 void MainWindow::setOption(int newOption){
     this->option = newOption;
 }
+
+void MainWindow::on_entropy_info_button_clicked()
+{
+    //generate info window
+    Shannon_entropy_info *s = new Shannon_entropy_info();
+    s->setWindowTitle("Shannon Entropy");
+    s->show();
+}
+
