@@ -46,6 +46,7 @@ void MainWindow::on_password_generation_settings_clicked()
 {
     //Generate the new window
     PassGen_Settings *p = new PassGen_Settings();
+    p->setWindowTitle("Generator Settings");
     p->showNormal();
 
 }

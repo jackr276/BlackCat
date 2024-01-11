@@ -6,6 +6,7 @@ PassGen_Settings::PassGen_Settings(QWidget *parent)
     , ui(new Ui::PassGen_Settings)
 {
     ui->setupUi(this);
+
 }
 
 
