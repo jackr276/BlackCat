@@ -35,3 +35,10 @@ void PassGen_Settings::on_MDG_Select_toggled(bool checked)
 
 }
 
+
+
+void PassGen_Settings::on_Cancel_Button_clicked()
+{
+    this->close();
+
+}

@@ -23,6 +23,8 @@ private slots:
 
     void on_MDG_Select_toggled(bool checked);
 
+    void on_Accept_button_2_clicked();
+
 private:
     Ui::PassGen_Settings *ui;
 };
