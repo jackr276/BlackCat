@@ -36,6 +36,8 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
+    void setAlgorithmDisplay(int option);
+
     void setOption(int newOption);
 };
 #endif // MAINWINDOW_H

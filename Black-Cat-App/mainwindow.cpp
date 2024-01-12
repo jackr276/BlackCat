@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui ->algorithm_display->setText("Linear Congruent Generator(LCG)");
 }
 
 MainWindow::~MainWindow()
@@ -22,11 +23,6 @@ MainWindow::~MainWindow()
  */
 void MainWindow::on_GeneratePasswordButton_clicked()
 {
-    if(this->option == 0){
-        ui->algorithm_display->setText("Matrix Determinant Generator(MDG)");
-    } else {
-        ui ->algorithm_display->setText("Linear Congruent Generator(LCG)");
-    }
 
     this->passcode = generatePassword(passwordLen, option);
 
@@ -52,9 +48,20 @@ void MainWindow::on_password_generation_settings_clicked()
     //Generate the new window
     PassGen_Settings *p = new PassGen_Settings(nullptr, option);
     QObject::connect(p, &PassGen_Settings::optionChanged, this, &MainWindow::setOption);
+    QObject::connect(p, &PassGen_Settings::optionChanged, this, &MainWindow::setAlgorithmDisplay);
     p->setWindowTitle("Generator Settings");
     p->showNormal();
+
 }
+
+void MainWindow::setAlgorithmDisplay(int option){
+    if(option == 1){
+        ui ->algorithm_display->setText("Linear Congruent Generator(LCG)");
+    } else {
+        ui->algorithm_display->setText("Matrix Determinant Generator(MDG)");
+    }
+}
+
 
 void MainWindow::setOption(int newOption){
     this->option = newOption;
