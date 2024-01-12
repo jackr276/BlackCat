@@ -50,8 +50,7 @@ void MainWindow::on_horizontalSlider_valueChanged(int value)
 void MainWindow::on_password_generation_settings_clicked()
 {
     //Generate the new window
-    PassGen_Settings *p = new PassGen_Settings();
-    //connect the optionchanging
+    PassGen_Settings *p = new PassGen_Settings(nullptr, option);
     QObject::connect(p, &PassGen_Settings::optionChanged, this, &MainWindow::setOption);
     p->setWindowTitle("Generator Settings");
     p->showNormal();
