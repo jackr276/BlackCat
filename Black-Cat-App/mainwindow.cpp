@@ -3,6 +3,7 @@
 #include "./PasswordManager.h"
 #include "./passgen_settings.h"
 #include "./shannon_entropy_info.h"
+#include <QClipboard>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -27,9 +28,9 @@ void MainWindow::on_GeneratePasswordButton_clicked()
         ui ->algorithm_display->setText("Linear Congruent Generator(LCG)");
     }
 
-    std::string passcode = generatePassword(passwordLen, option);
+    this->passcode = generatePassword(passwordLen, option);
 
-    double entropy = checkEntropy(passcode, passwordLen);
+    double entropy = checkEntropy(this->passcode, passwordLen);
     QString passw = QString::fromStdString(passcode);
     ui->passwordBox->setText(passw);
 
@@ -66,5 +67,15 @@ void MainWindow::on_entropy_info_button_clicked()
     Shannon_entropy_info *s = new Shannon_entropy_info();
     s->setWindowTitle("Shannon Entropy");
     s->show();
+}
+
+
+void MainWindow::on_clip_board_button_clicked()
+{
+    QClipboard *c = QGuiApplication::clipboard();
+    QString password_copied = QString::fromStdString(this->passcode);
+
+    c->setText(password_copied);
+
 }
 
