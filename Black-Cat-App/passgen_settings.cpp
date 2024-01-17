@@ -1,11 +1,13 @@
 #include "passgen_settings.h"
 #include "ui_passgen_settings.h"
 
-PassGen_Settings::PassGen_Settings(QWidget *parent)
+PassGen_Settings::PassGen_Settings(QWidget *parent, int option)
     : QDialog(parent)
     , ui(new Ui::PassGen_Settings)
 {
     ui->setupUi(this);
+    ui->MDG_Select->setChecked(option == 0);
+    ui->LCG_Select->setChecked(option == 1);
 
 }
 

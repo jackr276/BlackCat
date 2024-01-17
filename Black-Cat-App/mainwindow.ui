@@ -402,7 +402,7 @@
      <rect>
       <x>340</x>
       <y>370</y>
-      <width>81</width>
+      <width>71</width>
       <height>31</height>
      </rect>
     </property>
@@ -482,7 +482,7 @@
      <rect>
       <x>360</x>
       <y>320</y>
-      <width>271</width>
+      <width>221</width>
       <height>23</height>
      </rect>
     </property>
@@ -508,7 +508,7 @@
    <widget class="QPushButton" name="entropy_info_button">
     <property name="geometry">
      <rect>
-      <x>430</x>
+      <x>410</x>
       <y>370</y>
       <width>31</width>
       <height>31</height>
@@ -574,6 +574,59 @@
     </property>
     <property name="icon">
      <iconset theme="dialog-information"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clip_board_button">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>270</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="task-past-due"/>
     </property>
    </widget>
   </widget>

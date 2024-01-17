@@ -11,7 +11,7 @@ class PassGen_Settings : public QDialog
 {
     Q_OBJECT
 public:
-    explicit PassGen_Settings(QWidget *parent=nullptr);
+    explicit PassGen_Settings(QWidget *parent, int option);
     ~PassGen_Settings();
 
 signals:

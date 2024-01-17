@@ -16,6 +16,7 @@ class MainWindow : public QMainWindow
 private:
     int passwordLen = 0;
     int option = 1;
+    std::string passcode;
 
 public:
     MainWindow(QWidget *parent = nullptr);
@@ -30,8 +31,12 @@ private slots:
 
     void on_entropy_info_button_clicked();
 
+    void on_clip_board_button_clicked();
+
 private:
     Ui::MainWindow *ui;
+
+    void setAlgorithmDisplay(int option);
 
     void setOption(int newOption);
 };
